@@ -4,6 +4,10 @@ module.exports = function(grunt) {
   grunt.initConfig({
     pkg: require('./package.json'),
 
+    clean: {
+      tmp: [ 'tmp' ]
+    },
+
     jshint: {
       options: {
         jshintrc: true
@@ -47,6 +51,8 @@ module.exports = function(grunt) {
   });
 
   // Load grunt plugins
+  grunt.loadTasks('tasks');
+  grunt.loadNpmTasks('grunt-contrib-clean');
   grunt.loadNpmTasks('grunt-contrib-jshint');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-bump');
@@ -57,5 +63,5 @@ module.exports = function(grunt) {
   grunt.registerTask('test', [ ]);
 
   // Default task
-  grunt.registerTask('default', [ 'jshint', 'test' ]);
+  grunt.registerTask('default', [ 'clean', 'jshint', 'test' ]);
 };
