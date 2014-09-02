@@ -15,5 +15,10 @@
   "undef": true,
   "unused": true,
   "noarg": true,
-  "node": true
+  "node": true,
+  "globals": {
+    "suite": false,
+    "suiteSetup": false,
+    "test": false
+  }
 }

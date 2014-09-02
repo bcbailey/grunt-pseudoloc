@@ -1,4 +1,4 @@
-# grunt-pseudoloc v0.0.0
+# grunt-pseudoloc v0.0.1
 
 Simple pseudolocalization of files.
 
