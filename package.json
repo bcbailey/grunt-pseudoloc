@@ -2,17 +2,33 @@
   "name": "grunt-pseudoloc",
   "version": "0.0.0",
   "description": "Grunt task to perform simple pseudolocalization",
-  "author": "Bradley C Bailey <bcbailey@godaddy.com>",
-  "license": "MIT",
-  "scripts": {
-    "test": "grunt test"
+  "homepage": "https://github.com/bcbailey/grunt-pseudoloc",
+  "author": {
+    "name": "Bradley C Bailey",
+    "email": "bcbailey@godaddy.com"
   },
-  "engines": {
-    "node": ">= 0.8.0"
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/bcbailey/grunt-pseudoloc.git"
   },
+  "bugs": {
+    "url": "https://github.com/bcbailey/grunt-pseudoloc/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/bcbailey/grunt-pseudoloc/blob/master/LICENSE"
+    }
+  ],
   "keywords": [
     "gruntplugin"
   ],
+  "engines": {
+    "node": ">= 0.8.0"
+  },
+  "scripts": {
+    "test": "grunt test"
+  },
   "dependencies": {
     "pseudoloc": "^1.1.0"
   },
