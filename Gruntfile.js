@@ -33,15 +33,27 @@ module.exports = function(grunt) {
         files: [ '<%= jshint.test %>' ],
         tasks: [ 'jshint:test', 'test' ]
       }
+    },
+
+    bump: {
+      updateConfigs: [ 'pkg' ],
+      commit: true,
+      createTag: true,
+      push: true,
+      pushTo: 'origin'
     }
   });
 
+  // Load grunt plugins
   grunt.loadNpmTasks('grunt-contrib-jshint');
   grunt.loadNpmTasks('grunt-contrib-watch');
+  grunt.loadNpmTasks('grunt-bump');
 
+  // Alias tasks
   grunt.registerTask('dev',  [ 'lint', 'watch' ]);
   grunt.registerTask('lint', [ 'jshint' ]);
   grunt.registerTask('test', [ ]);
 
+  // Default task
   grunt.registerTask('default', [ 'jshint', 'test' ]);
 };
