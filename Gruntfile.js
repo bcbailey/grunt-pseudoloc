@@ -36,11 +36,13 @@ module.exports = function(grunt) {
     },
 
     bump: {
-      updateConfigs: [ 'pkg' ],
-      commit: true,
-      createTag: true,
-      push: true,
-      pushTo: 'origin'
+      options: {
+        updateConfigs: [ 'pkg' ],
+        commit: true,
+        createTag: true,
+        push: true,
+        pushTo: 'origin'
+      }
     }
   });
 
