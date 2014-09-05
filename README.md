@@ -1,4 +1,4 @@
-# grunt-pseudoloc v0.0.1
+# grunt-pseudoloc v0.0.2
 
 Simple pseudolocalization of files.
 
@@ -111,4 +111,5 @@ using [Grunt](http://gruntjs.com/).
 
 ## Release History
 
+ * 2014-09-05   v0.0.2   Updated logging output
  * 2014-09-02   v0.0.1   Initial release
