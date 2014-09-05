@@ -1,6 +1,6 @@
 {
   "name": "grunt-pseudoloc",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Grunt task to perform simple pseudolocalization",
   "homepage": "https://github.com/bcbailey/grunt-pseudoloc",
   "author": {
