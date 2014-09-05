@@ -1,6 +1,7 @@
 'use strict';
 
 var pseudoloc = require('pseudoloc');
+var chalk = require('chalk');
 
 module.exports = function(grunt) {
   grunt.registerMultiTask('pseudoloc', function() {
@@ -30,7 +31,7 @@ module.exports = function(grunt) {
 
       // write dest file
       grunt.file.write(file.dest, JSON.stringify(data, null, 2));
-      grunt.log.ok('Wrote "' + dest + '".');
+      grunt.log.writeln('File ' + chalk.cyan(dest) + ' created.');
     });
   });
 };
